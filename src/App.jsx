@@ -10,11 +10,10 @@ const queryClient = new QueryClient()
  function App() {
   return (
     <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}> 
-      <WalletOptions />
-        <Account />
-        <SendTransaction />
-       
+      <QueryClientProvider client={queryClient}>   
+        <WalletOptions />
+        <Account />  
+        <SendTransaction /> 
       </QueryClientProvider> 
     </WagmiProvider>
   )

@@ -1,4 +1,3 @@
-
 import { useAccount, useBalance, useDisconnect } from 'wagmi';
 import './styles.css';
 

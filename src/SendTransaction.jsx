@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { useSendTransaction } from 'wagmi';
 import { parseEther } from '../node_modules/viem';
