@@ -4,19 +4,23 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: #040024 ;
+  background-image: url("/background.png");
+  background-color: #0b062b;
   font-family: Arial, sans-serif;
 }
 
-.account-card, .transaction-card, .wallet-options {
+.account-card,
+.transaction-card,
+.wallet-options {
   border: 1px solid #fff;
   border-radius: 12px;
   padding: 24px;
   max-width: 400px;
   margin: 16px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  background-color: #0a023c;
-  color: #333;
+  background:
+      linear-gradient(to right, rgba(174, 242, 255, 0.15), rgba(174, 242, 255, 0.15));
+  color: black;
   text-align: center;
 }
 
@@ -26,9 +30,11 @@ body {
   color: white;
 }
 
-.disconnect-button, .send-button, .wallet-button {
-  background-color: #7d6dda;
-  color: #fff;
+.disconnect-button,
+.send-button,
+.wallet-button {
+  background: linear-gradient(to right, #32D8F9, #B9F3FF);
+  color: black;
   border: none;
   border-radius: 8px;
   padding: 12px 20px;
@@ -38,17 +44,20 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.disconnect-button:hover, .send-button:hover, .wallet-button:hover {
+.disconnect-button:hover,
+.send-button:hover,
+.wallet-button:hover {
   background-color: #0056b3;
 }
 
 .input-field {
-  width: calc(100% - 20px);
-  padding: 12px 10px;
-  margin: 12px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 14px;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgba(50, 216, 249, 0.25);
+  border: 1px solid rgba(50, 216, 249, 0.75);
+  color: white;
+  font-size: 1rem;
+  border-radius: 0.25rem;
 }
 
 .transaction-hash {
@@ -62,7 +71,8 @@ body {
   text-align: center;
 }
 
-.wallet-options h2, .transaction-card h2 {
+.wallet-options h2,
+.transaction-card h2 {
   margin-bottom: 20px;
   color: #007bff;
   font-size: 24px;
@@ -74,3 +84,4 @@ body {
 .stop-button:hover {
   background-color: #c82333;
 }
+
